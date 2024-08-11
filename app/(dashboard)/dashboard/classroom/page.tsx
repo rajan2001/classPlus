@@ -15,7 +15,7 @@ const BillboardsPage = async () => {
     const response = await prisma.classroom.findMany({})
 
     const Userdata = await clerkClient.users.getUserList({
-        userId: response.map((data) => data.teacherId)
+        userId: response.map((data: any) => data.teacherId)
     })
 
     const formattedBillboards: any = response.map((item: any) => ({
