@@ -1,5 +1,6 @@
 import ClassRoomForm from "@/components/dashboard/create-class";
 import { auth, clerkClient } from "@clerk/nextjs/server";
+import prisma from "@/lib/connectdb";
 
 const Page = async ({ params }: { params: { teacherId: string } }) => {
 

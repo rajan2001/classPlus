@@ -2,6 +2,7 @@ import { auth, clerkClient } from "@clerk/nextjs/server";
 import { GroupIcon, User } from "lucide-react";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import prisma from "@/lib/connectdb";
 
 
 

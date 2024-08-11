@@ -2,6 +2,7 @@ import { ChildClient } from '@/components/dashboard/child/child-client';
 import { auth, clerkClient } from '@clerk/nextjs/server';
 import { format } from 'date-fns'
 import { redirect } from 'next/navigation';
+import prisma from '@/lib/connectdb';
 
 
 const BillboardsPage = async () => {
